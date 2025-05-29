@@ -1,0 +1,55 @@
+[
+    {
+        "type": "constructor",
+        "name": "constructor",
+        "inputs": [
+            {
+                "name": "initial_value",
+                "type": "core::integer::u128"
+            },
+            {
+                "name": "recipient",
+                "type": "core::starknet::contract_address::ContractAddress"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "increase_value",
+        "inputs": [
+            {
+                "name": "amount",
+                "type": "core::integer::u128"
+            }
+        ],
+        "outputs": [],
+        "state_mutability": "external"
+    },
+    {
+        "type": "function",
+        "name": "get_value",
+        "inputs": [],
+        "outputs": [
+            {
+                "type": "core::integer::u128"
+            }
+        ],
+        "state_mutability": "view"
+    },
+    {
+        "type": "function",
+        "name": "transfer_value",
+        "inputs": [
+            {
+                "name": "recipient",
+                "type": "core::starknet::contract_address::ContractAddress"
+            },
+            {
+                "name": "amount",
+                "type": "core::integer::u128"
+            }
+        ],
+        "outputs": [],
+        "state_mutability": "external"
+    }
+]
